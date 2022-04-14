@@ -29,17 +29,17 @@ def get_pins(observed):
 
             hold.append(get_adjacent_indices(i,j))
             
-    li_3 = []
+    li_2 = []
     for indexing in range(len(hold)):
         for tup in hold[indexing]:
             x = tup[0]
             y = tup[1]
 
-            li_3.append(keypad[x][y])
-            li_3.append(li_pins[indexing])
+            li_2.append(keypad[x][y])
+            li_2.append(li_pins[indexing])
 
-        hold[indexing] = list(set(li_3))
-        li_3 = []
+        hold[indexing] = list(set(li_2))
+        li_2 = []
 
     hold = ([list(map(str,i) ) for i in hold])
     
