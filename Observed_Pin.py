@@ -14,8 +14,6 @@ def get_adjacent_indices(i, j):
         
     return adjacent_indices
 
-import itertools
-
 def get_pins(observed):
     
     keypad = [[1,2,3],[4,5,6],[7,8,9],['$',0,'$']]
